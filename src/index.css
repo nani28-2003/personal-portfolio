@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import 'locomotive-scroll/dist/locomotive-scroll.css';
+
+@font-face {
+  font-family:"Neue Montreal" ;
+  src: url('./assets/Fonts/NeueMontreal-Regular.otf');
+}
+@font-face {
+  font-family: "Neue Montreal2";
+  src: url(
+   ' ./assets/Fonts/NeueMontreal-BoldItalic.otf');
+}
