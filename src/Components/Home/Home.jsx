@@ -4,7 +4,7 @@ import video from "../../assets/bg-video.mp4";
 import Navbar from "../Navbar/Navbar";
 import Hero from "./Hero";
 import Scrolling from "../Scrolling/Scrolling";
-import AboutMe from "../AboutMe/AboutMe";
+import AboutMe from "../aboutme/AboutMe";
 import JustAni from "../aboutme/JustAni";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
@@ -25,19 +25,26 @@ const Home = () => {
 
   return (
     <>
-     <video className=" fixed h-screen w-full object-fill -z-50" src={video} loop muted autoPlay ></video>
-    <div data-scroll-container ref={scrollRef}
-    className=" relative overflow-x-hidden"
-    id="home">
-     
+      <video
+        className=" fixed h-screen w-full object-fill -z-50"
+        src={video}
+        loop
+        muted
+        autoPlay></video>
+      <div
+        data-scroll-container
+        ref={scrollRef}
+        className=" relative overflow-x-hidden"
+        id="home">
         <Navbar />
         <Hero />
         <Scrolling />
         <AboutMe />
         <JustAni />
         <Projects />
-        <Skills/>
-    </div></>
+        <Skills />
+      </div>
+    </>
   );
 };
 
